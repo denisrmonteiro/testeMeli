@@ -1,4 +1,4 @@
-package com.example.meli.controller;
+package com.example.meli.testconfig;
 
 import com.example.meli.service.ItemService;
 import org.springframework.boot.test.context.TestConfiguration;

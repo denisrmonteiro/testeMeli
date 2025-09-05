@@ -3,7 +3,7 @@ package com.example.meli.controller;
 import com.example.meli.model.Item;
 import com.example.meli.service.ItemService;
 
-import testconfig.ItemServiceMockConfig;
+import com.example.meli.testconfig.ItemServiceMockConfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
