@@ -2,6 +2,9 @@ package com.example.meli.controller;
 
 import com.example.meli.model.Item;
 import com.example.meli.service.ItemService;
+
+import testconfig.ItemServiceMockConfig;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -15,6 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+@Import(com.example.meli.testconfig.ItemServiceMockConfig.class)
 @WebMvcTest(ItemController.class)
 public class ItemControllerTest {
 
