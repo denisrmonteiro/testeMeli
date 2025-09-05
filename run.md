@@ -2,9 +2,8 @@
 
 - Certifique-se de ter o Java 17+ instalado;
 - Navegue até a raiz do projeto;
-- Execute os seguintes comandos:
+- Execute o seguinte comando:
 
-mvn clean install
 mvn spring-boot:run
 
 A API estará disponível em:
