@@ -22,4 +22,12 @@ Esta API foi desenvolvida como parte do teste técnico para a vaga de Desenvolve
 
 - O arquivo `items.json` está localizado em `src/main/resources`
 
+## Requisitos não funcionais
+
+- Foram incluídos os seguintes requisitos:
+    . Testes unitários
+    . Documentação via swagger
+
+
+
 
