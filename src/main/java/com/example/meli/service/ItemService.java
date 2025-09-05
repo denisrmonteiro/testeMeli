@@ -23,6 +23,12 @@ public class ItemService {
 
     @PostConstruct
     public void init() {
+        if (System.getProperty("spring.test.active") != null) {
+            System.out.println("Ignorando loadItems em ambiente de teste");
+            return;
+        }
+
+
         try {
             ObjectMapper mapper = new ObjectMapper();
             InputStream is = getClass().getResourceAsStream("/items.json");

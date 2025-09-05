@@ -28,6 +28,8 @@ public class ItemControllerTest {
    @DisplayName("Deve retornar item por ID via controller")
     public void deveRetornarItemPorId() throws Exception {
 
+        System.setProperty("spring.test.active", "true");
+
         System.out.println ("Executando deveRetornarItemPorId teste");
         
         Item mockItem = new Item(1L, 2L, "Produto A", 
