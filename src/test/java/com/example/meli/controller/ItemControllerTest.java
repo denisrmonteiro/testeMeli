@@ -30,7 +30,10 @@ public class ItemControllerTest {
 
         System.out.println ("Executando deveRetornarItemPorId teste");
         
-        Item mockItem = new Item(1L, 2L, "Produto A", "Descrição A", 100.0, 10.0, 190.0, "BRL", "urlA");
+        Item mockItem = new Item(1L, 2L, "Produto A", 
+                    "Descrição A", 100.0, 
+                    10.0, 190.0, "BRL", 
+                    "urlA");
 
         when(itemService.getItemById(1L)).thenReturn(mockItem);
 
@@ -39,8 +42,8 @@ public class ItemControllerTest {
 
         mockMvc.perform(get("/api/items/1"))
             .andExpect(status().isOk())
-            .andExpect(jsonPath("$.name").value("Produto A"))
-            .andExpect(jsonPath("$.price").value(100.0));
+            .andExpect(jsonPath("$.itemName").value("Produto A"))
+            .andExpect(jsonPath("$.itemPrice").value(100.0));
 
         System.out.println("Depois do mockMvc.perform");
 
