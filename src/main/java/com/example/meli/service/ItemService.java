@@ -20,6 +20,7 @@ public class ItemService {
     public void init(List<Item> mockItems) {
         this.items = mockItems;
     }
+
     @PostConstruct
     public void init() {
         try {

@@ -14,7 +14,8 @@ public class ItemServiceTest {
     private ItemService itemService;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
+
         itemService = new ItemService();
 
         // Simula os dados carregados do JSON
@@ -24,8 +25,10 @@ public class ItemServiceTest {
         ));
     }
 
+
     @Test
     public void deveRetornarItemExistente() {
+
         Item item = itemService.getItemById(1L);
         assertNotNull(item);
         assertEquals("Produto A", item.getItemName());
@@ -33,6 +36,7 @@ public class ItemServiceTest {
 
     @Test
     public void deveLancarExcecaoParaItemInexistente() {
+                
         assertThrows(ItemNotFoundException.class, () -> itemService.getItemById(999L));
     }
 }
