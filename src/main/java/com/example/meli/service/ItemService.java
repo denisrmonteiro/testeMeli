@@ -17,6 +17,9 @@ public class ItemService {
 
     private List<Item> items;
 
+    public void init(List<Item> mockItems) {
+        this.items = mockItems;
+    }
     @PostConstruct
     public void init() {
         try {
