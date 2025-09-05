@@ -1,0 +1,14 @@
+[
+    {
+        "itemId": 112233,
+        "itemSku": 123456,
+        "itemName": "Smartphone iPhone 13",
+        "itemDescription": "Telefone Apple iPhone 13",
+        "itemPrice": 3500.00,
+        "itemDiscount": 10.0,
+        "itemSalePrice": 3150.0,
+        "itemCurrency": "BRL",
+        "itemImageURL": "https://example.com/imagens/iphone13.jpg"
+
+    }
+]
